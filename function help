@@ -5,7 +5,7 @@ string noVowels(string s) {
     for (int i = 0; i < s.length(); i++)        
     {
         if (find(vowels.begin(), vowels.end(), 
-            s[i]) != vVowels.end())
+            s[i]) != vowels.end())
         {
             vowelless = s.replace(i, 1, "");
             i -= 2;
