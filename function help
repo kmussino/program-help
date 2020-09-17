@@ -1,0 +1,15 @@
+string noVowels(string s) {
+    char vowels [10] = { 'a' ,'e','i','o','u','A','E','I','O','U' };
+    string vowelless = " ";
+   
+    for (int i = 0; i < s.length(); i++)        
+    {
+        if (find(vowels.begin(), vowels.end(), 
+            s[i]) != vVowels.end())
+        {
+            vowelless = s.replace(i, 1, "");
+            i -= 2;
+        }
+    }
+    return vowelless;
+}
